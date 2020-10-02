@@ -7,7 +7,7 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* this is what makes the view port to be 100% the size of the screen */
   overflow: auto;
   scroll-snap-type: y mandatory; /*allows the scroll bar to snap where the scroll snap align is defined */
 }
