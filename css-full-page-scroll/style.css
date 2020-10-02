@@ -9,20 +9,20 @@
   width: 100%;
   height: 100vh;
   overflow: auto;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; /*allows the scroll bar to snap where the scroll snap align is defined */
 }
 
 .container .section {
   position: relative;
   height: 100%;
   width: 100%;
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* when scrolling, it will try to snap to the start of the page */
   background-blend-mode: multiply;
 }
 .container .section:nth-child(1) {
   background: url(./bg1.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; /* fixes the background on scroll */
 }
 .container .section:nth-child(2) {
   background: url(./bg2.jpg);
